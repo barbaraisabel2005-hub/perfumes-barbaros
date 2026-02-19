@@ -17,14 +17,14 @@ text-align:center;
 header{
 background:#000;
 color:#fff;
-padding:20px;
-font-size:24px;
+padding:25px;
+font-size:26px;
 font-weight:bold;
 }
 
 .section-title{
-margin-top:50px;
-font-size:22px;
+margin-top:60px;
+font-size:24px;
 }
 
 .container{
@@ -41,6 +41,10 @@ padding:20px;
 width:260px;
 border-radius:10px;
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h3{
+margin:10px 0;
 }
 
 .price{
@@ -80,8 +84,8 @@ box-shadow:0 4px 10px rgba(0,0,0,0.1);
 footer{
 background:#000;
 color:#fff;
-padding:20px;
-margin-top:50px;
+padding:30px;
+margin-top:60px;
 }
 
 footer a{
@@ -105,7 +109,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.3);
 
 <script>
 function buyWhatsApp(product, price){
-const number = "569XXXXXXXX"; // REEMPLAZA CON TU NUMERO
+const number = "569XXXXXXXX"; 
 const message = `Hola! Quiero comprar ${product}. Total: $${price}.`;
 window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, "_blank");
 }
@@ -116,30 +120,127 @@ window.open(`https://wa.me/${number}?text=${encodeURIComponent(message)}`, "_bla
 
 <header>Perfumes Bárbaros</header>
 
-<!-- SOBRE MI -->
 <div class="about">
 <h2>Sobre Perfumes Bárbaros</h2>
 <p>
-En Perfumes Bárbaros seleccionamos fragancias originales de alta calidad,
-pensadas para hombres y mujeres que quieren destacar.
-Ofrecemos atención personalizada, asesoría directa y opciones de pago seguras.
-Aquí no compras solo un perfume, compras experiencia y confianza.
+Seleccionamos fragancias originales de alta calidad para hombres y mujeres que quieren destacar.
+Atención personalizada, asesoría directa y pago seguro.
+Aquí no compras solo un perfume, compras experiencia y presencia.
 </p>
 </div>
 
-<!-- AQUÍ VAN TODOS TUS PRODUCTOS (mantén los que ya pegaste antes debajo de esta línea) -->
+<h2 class="section-title">🧔 Masculinos</h2>
+<div class="container">
 
-<!-- CONTACTO -->
+<div class="card">
+<h3>Armaf Mandarin Sky</h3>
+<p>Fresco y vibrante con elegancia moderna.</p>
+<p class="price">$35.810</p>
+<button class="whatsapp" onclick="buyWhatsApp('Armaf Mandarin Sky',35810)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Club de Nuit Intense Man</h3>
+<p>Intenso y sofisticado, presencia inolvidable.</p>
+<p class="price">$31.700</p>
+<button class="whatsapp" onclick="buyWhatsApp('Club de Nuit Intense Man',31700)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Lattafa Asad Bourbon</h3>
+<p>Dulce y seductor, perfecto para la noche.</p>
+<p class="price">$30.680</p>
+<button class="whatsapp" onclick="buyWhatsApp('Lattafa Asad Bourbon',30680)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Lattafa Oud for Glory</h3>
+<p>Exótico, potente y elegante.</p>
+<p class="price">$25.580</p>
+<button class="whatsapp" onclick="buyWhatsApp('Lattafa Oud for Glory',25580)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Afnan 9PM</h3>
+<p>Dulce nocturno ideal para citas.</p>
+<p class="price">$35.810</p>
+<button class="whatsapp" onclick="buyWhatsApp('Afnan 9PM',35810)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>French Avenue Liquid Brun</h3>
+<p>Elegancia moderna y duradera.</p>
+<p class="price">$40.910</p>
+<button class="whatsapp" onclick="buyWhatsApp('French Avenue Liquid Brun',40910)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+</div>
+
+<h2 class="section-title">👩 Femeninos</h2>
+<div class="container">
+<div class="card">
+<h3>Lattafa Art of Universe</h3>
+<p>Femenino elegante y envolvente.</p>
+<p class="price">$51.150</p>
+<button class="whatsapp" onclick="buyWhatsApp('Lattafa Art of Universe',51150)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+</div>
+
+<h2 class="section-title">🌈 Unisex</h2>
+<div class="container">
+
+<div class="card">
+<h3>Kayaan Elixir</h3>
+<p>Equilibrio perfecto entre frescura y profundidad.</p>
+<p class="price">$37.840</p>
+<button class="whatsapp" onclick="buyWhatsApp('Kayaan Elixir',37840)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Rasasi Hawas</h3>
+<p>Fresco, acuático y versátil.</p>
+<p class="price">$47.060</p>
+<button class="whatsapp" onclick="buyWhatsApp('Rasasi Hawas',47060)">WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+</div>
+
 <footer>
 <p><strong>Contacto</strong></p>
-<p>Email: barbaraisabel2005@gmail.com</p>
+<p>Email: barbaraiabel2005@gmail.com</p>
 <p>Instagram: <a href="https://instagram.com/tucuenta" target="_blank">@per_barbaros_</a></p>
 <p>WhatsApp: +56 9 4719 1040</p>
 <p>© 2026 Perfumes Bárbaros</p>
 </footer>
 
-<!-- BOTON FLOTANTE -->
-<a class="whatsapp-float" href="https://wa.me/569XXXXXXXX" target="_blank">💬</a>
+<a class="whatsapp-float" href="https://wa.me/56947191040" target="_blank">💬</a>
 
 </body>
 </html>
