@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfumes Bárbaros</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0f0f0f;
+    color: white;
+}
+
+header {
+    background: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section {
+    padding: 40px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    border-bottom: 2px solid #444;
+    padding-bottom: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    padding: 20px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.whatsapp {
+    background: #25D366;
+    color: white;
+}
+
+.pay {
+    background: #009ee3;
+    color: white;
+}
+
+.about {
+    background: #1c1c1c;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: black;
+    margin-top: 40px;
+}
+</style>
+</head>
+<body>
+
+<header>
+Perfumes Bárbaros
+</header>
+
+<div class="section">
+<h2>Nuestros Perfumes</h2>
+<div class="products">
+
+<div class="card">
+<h3>Afnan 9PM</h3>
+<p>Fragancia intensa y seductora con notas dulces y especiadas. Ideal para la noche y ocasiones especiales.</p>
+<p class="price">$35.000</p>
+<button class="whatsapp" onclick="buyWhatsApp('Afnan 9PM', 35000)">Comprar por WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Rayhaan Elixir</h3>
+<p>Perfume elegante y envolvente con carácter sofisticado. Perfecto para destacar con presencia.</p>
+<p class="price">$42.000</p>
+<button class="whatsapp" onclick="buyWhatsApp('Rayhaan Elixir', 42000)">Comprar por WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+<div class="card">
+<h3>Hawas</h3>
+<p>Aromático fresco con toques acuáticos y dulces. Versátil, juvenil y muy llamativo.</p>
+<p class="price">$40.000</p>
+<button class="whatsapp" onclick="buyWhatsApp('Hawas', 40000)">Comprar por WhatsApp</button>
+<a href="https://link.mercadopago.cl/perfumesbarbaros" target="_blank">
+<button class="pay">Pagar Online</button>
+</a>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Sobre mí</h2>
+<div class="about">
+<p>Mi nombre es Valora, tengo 20 años y soy una estudiante venezolana en Chile. 
+Estoy construyendo mi propio emprendimiento para lograr independencia financiera y generar ingresos propios.</p>
+
+<p>Soy apasionada de los perfumes y decidí convertir esa pasión en algo más que un hobby: una marca con identidad, presencia y calidad.</p>
+
+<p>Gracias por apoyar un sueño en crecimiento 💛</p>
+</div>
+</div>
+
+<footer>
+Contacto: +56 9 4719 1040 | Instagram: @per_barbaros_ | barbaraisabel2005@gmail.com
+</footer>
+
+<script>
+function buyWhatsApp(product, price) {
+    const total = Math.round(price * 1.023);
+    const message = `Hola Valora 😊 quiero comprar ${product}. Total con comisión incluida: $${total.toLocaleString('es-CL')}`;
+    const url = `https://wa.me/56947191040?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
+}
+</script>
+
+</body>
+</html>
